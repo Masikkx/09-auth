@@ -2,7 +2,7 @@ import { api } from "./api";
 import type { Note, CreateNote } from "@/types/note";
 import type { User } from "@/types/user";
 
-// ---------- NOTES ----------
+
 export type FetchNotesParams = {
   page: number;
   perPage: number;
@@ -38,7 +38,7 @@ export const deleteNote = async (id: string) => {
   return res.data;
 };
 
-// ---------- AUTH ----------
+
 export type RegisterRequest = {
   email: string;
   password: string;
